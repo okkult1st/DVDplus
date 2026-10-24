@@ -56,7 +56,7 @@ dt{color:var(--faint)}dd{color:#d6d6d6;min-width:0}
 .chips span{padding:7px 14px;border:1px solid var(--line);border-radius:999px;font-size:14px;color:var(--muted)}
 footer{padding:110px 0 max(54px,env(safe-area-inset-bottom));color:var(--faint);font-size:15px}
 footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:28px}
-footer b{color:var(--text);font-weight:600}
+footer b{color:var(--text);font-weight:600;margin-left:.25em}
 footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--text)}
 .top{position:absolute;z-index:3;top:0;left:0;right:0;padding-top:env(safe-area-inset-top);pointer-events:none}
 .bar{display:flex;justify-content:space-between;align-items:center;padding-top:22px;font-size:15px;color:var(--muted)}
@@ -91,14 +91,14 @@ html[lang=zh] h2{font-weight:700}
 </head>
 <body>
 <header class="hero">
-  <canvas id="stage" data-i18n-aria="aria" aria-label="Отскакивающий DVD-логотип. Клик добавляет ещё один."></canvas>
-  <div class="top"><div class="wrap bar"><b>DVD+</b><div class="links"><a href="#inside" data-i18n="nav_f">Возможности</a><select class="lang" id="lang" aria-label="Language"><option value="ru">Русский</option><option value="en">English</option><option value="zh">中文</option></select><a class="pill" href="#download" data-i18n="nav_d">Скачать</a></div></div></div>
+  <canvas id="stage" data-i18n-aria="aria" aria-label="Отскакивающий DVD-логотип."></canvas>
+  <div class="top"><div class="wrap bar"><b>DVD+</b><div class="links"><select class="lang" id="lang" aria-label="Language"><option value="ru">Русский</option><option value="en">English</option><option value="zh">中文</option></select><a class="pill" href="#download" data-i18n="nav_d">Скачать</a></div></div></div>
   <div class="wrap bottom">
     <div class="copy">
     <h1>DVD+</h1>
     <p class="lede" data-i18n="lede">Тот самый отскакивающий логотип, который все ждут, когда попадёт в угол. Только теперь его можно настроить под себя.</p>
     <div class="row">
-      <a class="btn" href="files/DVD+.exe" download data-i18n="btn">Скачать DVD+ <span>v1.0.0</span></a>
+      <a class="btn" href="files/DVD+.exe" download data-i18n="btn">Скачать DVD+ <span>v1.1.0</span></a>
       <span class="meta" data-i18n="meta">Windows · без установки</span>
     </div>
     </div>
@@ -112,7 +112,7 @@ html[lang=zh] h2{font-weight:700}
   <p class="sub" data-i18n="dl_s">Один файл, запускается двойным кликом. Ничего ставить не нужно.</p>
   <div class="dl">
     <article class="card main">
-      <div class="head"><h3>DVD+</h3><span class="ver" data-i18n="ver">версия 1.0.0</span></div>
+      <div class="head"><h3>DVD+</h3><span class="ver" data-i18n="ver">версия 1.1.0</span></div>
       <p data-i18n="cp">Полная версия с настройками траектории, цвета, фона и эффектов.</p>
       <a class="btn" href="files/DVD+.exe" download data-i18n="btn2">Скачать DVD+</a>
       <div class="note" data-i18n="note">Сейчас DVD+ работает только на Windows. Откройте эту страницу на компьютере, чтобы скачать.</div>
@@ -125,26 +125,14 @@ html[lang=zh] h2{font-weight:700}
   <p class="old" id="classic" data-i18n="old">Нужна старая версия без настроек? <a href="files/DVD.exe" download>DVD Classic</a>.</p>
 </section>
 
-<section id="inside">
-  <h2 data-i18n="f_h">Что внутри DVD+</h2>
-  <p class="sub" data-i18n="f_s">Всё меняется на лету, без перезапуска.</p>
-  <div class="feat">
-    <div><h4 data-i18n="f1h">Траектория и физика</h4><p data-i18n="f1p">Угол, гравитация, вращение и разброс отскока.</p></div>
-    <div><h4 data-i18n="f2h">Цвет</h4><p data-i18n="f2p">Палитры, случайный цвет, радуга, яркость и прозрачность.</p></div>
-    <div><h4 data-i18n="f3h">Фон</h4><p data-i18n="f3p">Заливка, градиент, звёзды или сетка.</p></div>
-    <div><h4 data-i18n="f4h">Эффекты</h4><p data-i18n="f4p">След, свечение, вспышки, частицы и строки развёртки.</p></div>
-    <div><h4 data-i18n="f5h">Свой логотип</h4><p data-i18n="f5p">Свой текст или картинка.</p></div>
-    <div><h4 data-i18n="f6h">Полный экран</h4><p data-i18n="f6p">Во весь экран, курсор можно спрятать.</p></div>
-  </div>
-</section>
 </main>
 
-<footer><div class="wrap"><span data-i18n="ft1">DVD+ v1.0.0 — сделал <b>okkult1st</b></span><span data-i18n="ft3">Ещё на <a href="https://okkult1st.itch.io/dvdplus" target="_blank" rel="noopener noreferrer">itch.io</a></span><span data-i18n="ft2">Не является официальным продуктом DVD Forum.</span></div></footer>
+<footer><div class="wrap"><span data-i18n="ft1">DVD+ v1.1.0 — сделал <b>okkult1st</b></span><span data-i18n="ft3">Ещё на <a href="https://okkult1st.itch.io/dvdplus" target="_blank" rel="noopener noreferrer">itch.io</a></span><span data-i18n="ft2">Не является официальным продуктом DVD Forum.</span></div></footer>
 
 <script>
 (()=>{
-const VERSION="1.0.0"; // меняйте версию здесь
-const I18N={"ru": {"title": "DVD+ — тот самый логотип, только твой", "desc": "DVD+ — настраиваемый отскакивающий DVD-логотип для Windows. Автор okkult1st.", "aria": "Отскакивающий DVD-логотип. Клик добавляет ещё один.", "nav_f": "Возможности", "nav_d": "Скачать", "lede": "Тот самый отскакивающий логотип, который все ждут, когда попадёт в угол. Только теперь его можно настроить под себя.", "btn": "Скачать DVD+ <span>v{v}</span>", "meta": "Windows · без установки", "corner": "Попаданий в угол", "dl_h": "Скачать", "dl_s": "Один файл, запускается двойным кликом. Ничего ставить не нужно.", "ver": "версия {v}", "cp": "Полная версия с настройками траектории, цвета, фона и эффектов.", "btn2": "Скачать DVD+", "note": "Сейчас DVD+ работает только на Windows. Откройте эту страницу на компьютере, чтобы скачать.", "run_h": "Как запустить", "run_p": "Скачайте и откройте файл. Если Windows покажет предупреждение SmartScreen, нажмите «Подробнее» → «Выполнить в любом случае».", "old": "Нужна старая версия без настроек? <a href=\"files/DVD.exe\" download>DVD Classic</a>.", "f_h": "Что внутри DVD+", "f_s": "Всё меняется на лету, без перезапуска.", "f1h": "Траектория и физика", "f1p": "Угол, гравитация, вращение и разброс отскока.", "f2h": "Цвет", "f2p": "Палитры, случайный цвет, радуга, яркость и прозрачность.", "f3h": "Фон", "f3p": "Заливка, градиент, звёзды или сетка.", "f4h": "Эффекты", "f4p": "След, свечение, вспышки, частицы и строки развёртки.", "f5h": "Свой логотип", "f5p": "Свой текст или картинка.", "f6h": "Полный экран", "f6p": "Во весь экран, курсор можно спрятать.", "ft1": "DVD+ v{v} — сделал <b>okkult1st</b>", "ft3": "Ещё на <a href=\"https://okkult1st.itch.io/dvdplus\" target=\"_blank\" rel=\"noopener noreferrer\">itch.io</a>", "ft2": "Не является официальным продуктом DVD Forum."}, "en": {"title": "DVD+ — the logo you know, made yours", "desc": "DVD+ is a customizable bouncing DVD logo for Windows. By okkult1st.", "aria": "A bouncing DVD logo. Click to add another one.", "nav_f": "Features", "nav_d": "Download", "lede": "The bouncing logo everyone waits to hit the corner. Now you can tune it however you like.", "btn": "Download DVD+ <span>v{v}</span>", "meta": "Windows · no installation", "corner": "Corner hits", "dl_h": "Download", "dl_s": "One file, opens with a double click. Nothing to install.", "ver": "version {v}", "cp": "The full version with trajectory, color, background and effects settings.", "btn2": "Download DVD+", "note": "DVD+ currently runs on Windows only. Open this page on a computer to download it.", "run_h": "How to run it", "run_p": "Download and open the file. If Windows shows a SmartScreen warning, click “More info” → “Run anyway”.", "old": "Need the old version without settings? <a href=\"files/DVD.exe\" download>DVD Classic</a>.", "f_h": "What’s inside DVD+", "f_s": "Everything changes on the fly, no restart needed.", "f1h": "Trajectory and physics", "f1p": "Angle, gravity, rotation and bounce variation.", "f2h": "Color", "f2p": "Palettes, random color, rainbow, brightness and opacity.", "f3h": "Background", "f3p": "Solid, gradient, stars or grid.", "f4h": "Effects", "f4p": "Trail, glow, flashes, particles and scanlines.", "f5h": "Your own logo", "f5p": "Your own text or image.", "f6h": "Fullscreen", "f6p": "Fill the whole screen, with the cursor hidden if you like.", "ft1": "DVD+ v{v} — made by <b>okkult1st</b>", "ft3": "Also on <a href=\"https://okkult1st.itch.io/dvdplus\" target=\"_blank\" rel=\"noopener noreferrer\">itch.io</a>", "ft2": "Not an official DVD Forum product."}, "zh": {"title": "DVD+ — 那个熟悉的 Logo，由你定制", "desc": "DVD+ 是一款适用于 Windows 的可自定义 DVD 弹跳 Logo。作者 okkult1st。", "aria": "弹跳的 DVD Logo。点击可再添加一个。", "nav_f": "功能", "nav_d": "下载", "lede": "那个大家都在等它撞上角落的弹跳 Logo。现在，你可以随心调整它。", "btn": "下载 DVD+ <span>v{v}</span>", "meta": "Windows · 免安装", "corner": "撞角次数", "dl_h": "下载", "dl_s": "只有一个文件，双击即可运行，无需安装。", "ver": "版本 {v}", "cp": "完整版，可设置轨迹、颜色、背景和特效。", "btn2": "下载 DVD+", "note": "DVD+ 目前仅支持 Windows。请在电脑上打开此页面下载。", "run_h": "如何运行", "run_p": "下载后直接打开。如果 Windows 弹出 SmartScreen 警告，请点击“更多信息”→“仍要运行”。", "old": "需要没有设置的旧版本？<a href=\"files/DVD.exe\" download>DVD Classic</a>。", "f_h": "DVD+ 的功能", "f_s": "所有设置实时生效，无需重启。", "f1h": "轨迹与物理", "f1p": "角度、重力、旋转和反弹随机偏差。", "f2h": "颜色", "f2p": "调色板、随机颜色、彩虹、亮度和透明度。", "f3h": "背景", "f3p": "纯色、渐变、星空或网格。", "f4h": "特效", "f4p": "拖尾、发光、闪光、粒子和扫描线。", "f5h": "自定义 Logo", "f5p": "自定义文字或图片。", "f6h": "全屏", "f6p": "铺满整个屏幕，还可以隐藏光标。", "ft1": "DVD+ v{v} — 作者 <b>okkult1st</b>", "ft3": "也在 <a href=\"https://okkult1st.itch.io/dvdplus\" target=\"_blank\" rel=\"noopener noreferrer\">itch.io</a>", "ft2": "非 DVD Forum 官方产品。"}};
+const VERSION="1.1.0"; // меняйте версию здесь
+const I18N={"ru":{"title":"DVD+ — тот самый логотип, только твой","desc":"DVD+ — настраиваемый отскакивающий DVD-логотип для Windows. Автор okkult1st.","aria":"Отскакивающий DVD-логотип.","nav_d":"Скачать","lede":"Классический DVD-скринсейвер с настройкой цвета, фона и эффектов.","btn":"Скачать DVD+ <span>v{v}</span>","meta":"Windows · без установки","corner":"Попаданий в угол","dl_h":"Скачать","dl_s":"Один файл, запускается двойным кликом. Ничего ставить не нужно.","ver":"версия {v}","cp":"Полная версия с настройками траектории, цвета, фона и эффектов.","btn2":"Скачать DVD+","note":"Сейчас DVD+ работает только на Windows. Откройте эту страницу на компьютере, чтобы скачать.","run_h":"Как запустить","run_p":"Скачайте и откройте файл. Если Windows покажет предупреждение SmartScreen, нажмите «Подробнее» → «Выполнить в любом случае».","old":"Нужна старая версия без настроек? <a href=\"files/DVD.exe\" download>DVD Classic</a>.","ft1":"DVD+ v{v} — сделал <b>okkult1st</b>","ft3":"Ещё на <a href=\"https://okkult1st.itch.io/dvdplus\" target=\"_blank\" rel=\"noopener noreferrer\">itch.io</a>","ft2":"Не является официальным продуктом DVD Forum."},"en":{"title":"DVD+ — the logo you know, made yours","desc":"DVD+ is a customizable bouncing DVD logo for Windows. By okkult1st.","aria":"Bouncing DVD logo.","nav_d":"Download","lede":"A classic DVD screensaver with customizable colors, backgrounds, and effects.","btn":"Download DVD+ <span>v{v}</span>","meta":"Windows · no installation","corner":"Corner hits","dl_h":"Download","dl_s":"One file, opens with a double click. Nothing to install.","ver":"version {v}","cp":"The full version with trajectory, color, background and effects settings.","btn2":"Download DVD+","note":"DVD+ currently runs on Windows only. Open this page on a computer to download it.","run_h":"How to run it","run_p":"Download and open the file. If Windows shows a SmartScreen warning, click “More info” → “Run anyway”.","old":"Need the old version without settings? <a href=\"files/DVD.exe\" download>DVD Classic</a>.","ft1":"DVD+ v{v} — made by <b>okkult1st</b>","ft3":"Also on <a href=\"https://okkult1st.itch.io/dvdplus\" target=\"_blank\" rel=\"noopener noreferrer\">itch.io</a>","ft2":"Not an official DVD Forum product."},"zh":{"title":"DVD+ — 那个熟悉的 Logo，由你定制","desc":"DVD+ 是一款适用于 Windows 的可自定义 DVD 弹跳 Logo。作者 okkult1st。","aria":"DVD 弹跳徽标。","nav_d":"下载","lede":"经典 DVD 屏幕保护程序，可自定义颜色、背景和特效。","btn":"下载 DVD+ <span>v{v}</span>","meta":"Windows · 免安装","corner":"撞角次数","dl_h":"下载","dl_s":"只有一个文件，双击即可运行，无需安装。","ver":"版本 {v}","cp":"完整版，可设置轨迹、颜色、背景和特效。","btn2":"下载 DVD+","note":"DVD+ 目前仅支持 Windows。请在电脑上打开此页面下载。","run_h":"如何运行","run_p":"下载后直接打开。如果 Windows 弹出 SmartScreen 警告，请点击“更多信息”→“仍要运行”。","old":"需要没有设置的旧版本？<a href=\"files/DVD.exe\" download>DVD Classic</a>。","ft1":"DVD+ v{v} — 作者 <b>okkult1st</b>","ft3":"也在 <a href=\"https://okkult1st.itch.io/dvdplus\" target=\"_blank\" rel=\"noopener noreferrer\">itch.io</a>","ft2":"非 DVD Forum 官方产品。"}};
 const root=document.documentElement;
 function pick(){let v=null;try{v=localStorage.getItem('dvdplus-lang')}catch(e){}
  if(I18N[v])return v;
@@ -161,24 +149,23 @@ setLang(pick(),false);
 if(/Android|iPhone|iPad|iPod/i.test(navigator.userAgent))document.documentElement.classList.add("is-mobile");
 const cv=document.getElementById('stage'),cx=cv.getContext('2d'),hitsEl=document.getElementById('hits');
 const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
-const PAL=['#00e0e2','#2ed648','#ff8412','#ba40e6','#f2d612','#389cff','#e82428'];
+const PAL=['#ffffff','#ff00ff','#00ffff','#00ff00','#ffff00','#ff0000','#ff8800'];
 const img=new Image();img.src='assets/logo.png';
 let W,H,dpr,items=[],hits=0,tint=new Map();
 function size(){dpr=Math.min(devicePixelRatio||1,2);W=cv.clientWidth;H=cv.clientHeight;cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0)}
 function colored(c,w,h){const k=c+w;if(tint.has(k))return tint.get(k);const o=document.createElement('canvas');o.width=w*dpr;o.height=h*dpr;const g=o.getContext('2d');g.drawImage(img,0,0,o.width,o.height);g.globalCompositeOperation='source-in';g.fillStyle=c;g.fillRect(0,0,o.width,o.height);tint.set(k,o);return o}
-function add(x,y){if(items.length>=12)items.shift();const w=Math.max(120,Math.min(230,W*.2)),h=w*img.naturalHeight/img.naturalWidth;
- const s=Math.max(110,W*.1);items.push({x:x??Math.random()*(W-w),y:y??Math.random()*(H*.6),w,h,vx:s*(Math.random()<.5?1:-1),vy:s*(Math.random()<.5?1:-1),c:0})}
+function add(){if(items.length>=12)items.shift();const w=Math.max(120,Math.min(230,W*.2)),h=w*img.naturalHeight/img.naturalWidth;
+ const s=Math.max(110,W*.1);items.push({x:Math.random()*(W-w),y:Math.random()*(H*.6),w,h,vx:s*(Math.random()<.5?1:-1),vy:s*(Math.random()<.5?1:-1),c:0})}
 function frame(t,last){const dt=Math.min((t-last)/1000||0,.05);cx.clearRect(0,0,W,H);
  for(const o of items){if(!reduce){o.x+=o.vx*dt;o.y+=o.vy*dt}
   let bx=false,by=false;
   if(o.x<=0){o.x=0;o.vx=Math.abs(o.vx);bx=true}else if(o.x+o.w>=W){o.x=W-o.w;o.vx=-Math.abs(o.vx);bx=true}
   if(o.y<=0){o.y=0;o.vy=Math.abs(o.vy);by=true}else if(o.y+o.h>=H){o.y=H-o.h;o.vy=-Math.abs(o.vy);by=true}
   if(bx||by){o.c=(o.c+1)%PAL.length;if(bx&&by){hits++;hitsEl.textContent=hits}}
-  cx.globalAlpha=.9;cx.drawImage(colored(PAL[o.c],Math.round(o.w),Math.round(o.h)),o.x,o.y,o.w,o.h)}
+  cx.globalAlpha=1;cx.drawImage(colored(PAL[o.c],Math.round(o.w),Math.round(o.h)),o.x,o.y,o.w,o.h)}
  requestAnimationFrame(n=>frame(n,t))}
-img.onload=()=>{size();add(W*.15,H*.12);requestAnimationFrame(t=>frame(t,t))};
+img.onload=()=>{size();add();requestAnimationFrame(t=>frame(t,t))};
 addEventListener('resize',()=>{size();tint.clear();items.forEach(o=>{o.x=Math.min(o.x,W-o.w);o.y=Math.min(o.y,H-o.h)})});
-cv.addEventListener('click',e=>{const r=cv.getBoundingClientRect();add(e.clientX-r.left-60,e.clientY-r.top-35)});
 })();
 </script>
 </body>
